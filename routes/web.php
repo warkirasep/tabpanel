@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AccordionController;
 use App\Http\Controllers\TabPaneController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [TabPaneController::class, 'index']);
 Route::get('/panel', [TabPaneController::class, 'panel']);
+Route::get('/accordion', [AccordionController::class, 'accordion']);
+Route::get('/accordion-active', [AccordionController::class, 'accordionActive']);
+
